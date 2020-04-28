@@ -1,0 +1,30 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephSodomized/myPage.git"
+  },
+  "author": "Dominik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosephSodomized/myPage/issues"
+  },
+  "homepage": "https://github.com/JosephSodomized/myPage#readme",
+  "dependencies": {
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.2.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
