@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0; }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit; }
+
+body{
+    background-image: linear-gradient(to right bottom, rgb(29, 29, 29), rgb(54, 54, 54));
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.container{
+  max-width: 120rem;
+  overflow: hidden;
+  height: 100vh;
+  padding-right: 0px;
+}
+
+.box{
+    overflow: hidden;
+    border-radius: 6px;
+    height: 90vh;
+    margin-top: 4%;
+}
+
+.col-centered{
+    float: 0;
+    margin: auto;
+}
+
+#drinkInput{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.5px solid rgb(255, 255, 255);
+}
+#drinkInput:focus{
+    outline: none;
+}
+
+#buttonOne{
+    color: white;
+}
+
+
+.loader {
+    margin: 1rem auto;
+    text-align: center;}
+    .loader svg {
+    width: 30px;
+    fill: rgba(196, 196, 196, 0.726);
+    animation: rotating 1s linear infinite;
+    }
+
+@keyframes rotating{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* - Drink List - */
+
+#drinkList{
+    height: 80vh;
+    width: 100px;
+    background-color: rgb(53, 53, 53);
+}
+
+#infoList{
+    height: 80vh;
+}

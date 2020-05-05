@@ -20,9 +20,16 @@
   },
   "homepage": "https://github.com/JosephSodomized/myPage#readme",
   "dependencies": {
+    "aos": "^2.3.4",
+    "babel-polyfill": "^6.26.0",
+    "jquery": "^3.5.0",
     "webpack": "^4.43.0"
   },
   "devDependencies": {
+    "axios": "^0.19.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
     "html-webpack-plugin": "^4.2.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
