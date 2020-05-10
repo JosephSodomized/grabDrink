@@ -16,7 +16,7 @@
 <body>
   <div class="container p-0">
     <div class="box">
-      <div class="row mt-5">
+      <div id="searchBox" class="row">
         <div class="col col-lg-4 col-centered ">
           <div class="input-group input-group-md text-center">
             <input width="300px" type="text" id="drinkInput">
@@ -26,13 +26,38 @@
           </div>
         </div>
       </div>
-      <div class="mt-5 row">
-        <div id="drinkList" class="col-md-6 m-0">
-          <ul id="resultList"></ul>
+      <div class="row">
+        <div id="drinkList" class="col-md-3">
+          <ul id="resultList" class="list-group text-white">
+            <!-- <li id="${drinks.idDrink}" class="searchItem text-center">
+              <div class="row text-center p-2">
+                <div class="col col-md-4 picBox">
+                  <img class="pic" src="../img/background.jpg" alt="">
+                </div>
+                <div class="col">
+                  <div class="row">${drinks.strDrink}</div>
+                  <div class="row opis"><p>lorem ipsum</p></div>
+                </div>
+              </div>
+              </li> -->
+          </ul>
         </div>
-          <div class="col-md-6">
-            <ol id="infoList"></ol>
+        <div class="col-md-6">
+
+          <div class="card" style="width: auto;">
+            <!-- <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div> -->
+
           </div>
+        </div>
+        <div class="col text-white">
+          <div>siemanko</div>
+        </div>
       </div>
     </div>
   </div>

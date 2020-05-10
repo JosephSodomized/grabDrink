@@ -3,7 +3,8 @@ export const elements = {
     searchInput: document.querySelector('#drinkInput'),
     searchBtn: document.querySelector('#buttonOne'),
     resultList: document.querySelector('#resultList'),
-    infoList: document.querySelector('#infoList')
+    infoList: document.querySelector('.card'),
+    
 } 
 
 export const elementStrings = {
@@ -25,4 +26,8 @@ export const renderLoader = parent => {
 export const clearLoader = () => {
     const loader = document.querySelector(`.${elementStrings.loader}`)
     if(loader) loader.parentElement.removeChild(loader);
+}
+
+export const cutToWords = (text) => {
+    return text.split(' ');
 }

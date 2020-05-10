@@ -1,7 +1,7 @@
-import { elements } from './base'
+import * as base from './base'
 
 export const clearPicture = () => {
-    elements.infoList.innerHTML = '';
+    base.elements.infoList.innerHTML = '';
 }
 
 //stara metoda, która porównywała kliknięty indeks z state.search.result
@@ -15,6 +15,26 @@ export const clearPicture = () => {
 // }
 
 export const renderPicture = el => {
-    const html = `<img src="${el.strDrinkThumb}" />`;
-    elements.infoList.insertAdjacentHTML('beforeend', html); 
+    console.log(el)
+    const html = `
+    <div id="picBox">
+    <img src="${el.drinkImg}" class="card-img-top" alt="...">
+    </div>
+            <div class="card-body">
+              <h5 class="card-title">${el.result.strDrink}</h5>
+              <p class="card-text">${shortInstructions(el.instruction)}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+
+    `;
+    base.elements.infoList.insertAdjacentHTML('beforeend', html); 
+}
+
+const shortInstructions = (text) => {
+    var arr = base.cutToWords(text);
+    return arr.length <= 10 ? arr.join(' ') : `${arr.slice(0, 10).join(' ')} <a id="shortTextLink" href=#>(...)</a>`;
+}
+
+export const showShortcutText = (instruction) => {
+    document.querySelector('.card-text').innerHTML = instruction;
 }
